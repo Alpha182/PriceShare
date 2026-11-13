@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "dev.priceshare.mixin",
+	"compatibilityLevel": "${mixinjava}",
+	"client": [
+		"DialogScreenAccessor",
+		"MinecraftMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

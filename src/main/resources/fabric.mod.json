@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "priceshare",
+	"version": "${version}",
+	"name": "Price Share",
+	"description": "Optional. Shares the DonutSMP Auction, Orders and Quick Buy menus and leaderboards you open with DonutMarket so its prices stay up to date. Off until you say yes; reads nothing else and never clicks or sends commands.",
+	"authors": [
+		"Kalpe Games"
+	],
+	"contact": {
+		"homepage": "https://donutmarket.cc/share",
+		"sources": "https://github.com/Alpha182/PriceShare",
+		"issues": "https://github.com/Alpha182/PriceShare/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/priceshare/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"dev.priceshare.PriceShareClient"
+		],
+		"modmenu": [
+			"dev.priceshare.ModMenuEntry"
+		]
+	},
+	"mixins": [
+		"priceshare.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16",
+		"minecraft": "${minecraft}",
+		"java": ">=${java}"
+	}
+}
